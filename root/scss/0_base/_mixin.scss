@@ -1,0 +1,66 @@
+/*------------------------------------------------------------
+	Clearfix
+------------------------------------------------------------*/
+@mixin clear {
+	*zoom: 1;
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+/*------------------------------------------------------------
+	Font
+------------------------------------------------------------*/
+@mixin mincyo() {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+@mixin mincho() {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3","Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+/*------------------------------------------------------------
+	Media
+------------------------------------------------------------*/
+@mixin max($point) {
+    @media screen and (max-width: $point) {
+        @content;
+    }
+}
+@mixin min($point) {
+    @media screen and (min-width: $point) {
+        @content;
+    }
+}
+@mixin sp {
+	@media screen and (max-width: #{$breakpoint1}) {
+		@content;
+	}
+}
+
+/*------------------------------------------------------------
+	Flex Box
+------------------------------------------------------------*/
+@mixin flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+@mixin flex-center {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;	
+}
+@mixin flex-icenter {
+	display: flex;
+    align-items: center;	
+}
+@mixin flex-jcenter {
+	display: flex;
+    justify-content: center;	
+}
+@mixin flex-jbetween {
+	display: flex;
+    justify-content: space-between;	
+}

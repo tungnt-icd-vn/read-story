@@ -1,0 +1,27 @@
+extends _layout/default
+
+block vars
+  -title        = 'Top'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+
+block container
+  ul.c-article
+    li
+      +article('TITLE 01', 'LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM')
+    li
+      +article('TITLE 02', 'LOREM IPSUM LOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUMLOREM IPSUM')
+  section.p-top__intro
+    h2.title Lorem ipsum dolor sit
+    p.description Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      br
+      |Non debitis quisquam sit fugit eum soluta nisi ipsam,
+      br
+      |culpa facilis optio pariatur labore aliquam, doloremque magni reprehenderit, in odit? Est, reiciendis.
+    p.description Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      span AAAAAAA
+      |Ipsum et asperiores magni rerum non,
+      small BBBBBBB
+      |ad praesentium maiores! Fuga molestiae doloremque voluptatibus distinctio impedit possimus sint, a ipsa quas eum corrupti?

@@ -1,0 +1,16 @@
+header.c-header#header
+  .l-container
+    h1.c-header__logo
+      a.logo-image(href=path+"/")
+        img(src=path+"/img/common/logo.png", alt="logo alt")
+    nav.c-header__nav
+      ul.c-header__nav__menu.nav-menu
+        li.nav-menu__item
+          a(href="#") About
+        li.nav-menu__item
+          a(href=path+"/news/") News
+        li.nav-menu__item
+          a(href="#") Info
+        if pageID == 'top'
+          li.nav-menu__item
+            a(href="#") TOP

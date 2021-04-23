@@ -1,0 +1,25 @@
+include ../_mixins/_all
+
+block vars
+  -title        = ''
+  -description  = ''
+  -keywords     = ''
+  -pageID       = ''
+  -path         = ''
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title=title
+    link(rel='stylesheet' href=path+'assets/css/style.css')
+  body
+    .container
+      include ../_modules/header
+      main.l-main
+        block container
+      include ../_modules/footer
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    script(src=path+"assets/js/common.js")
+      
