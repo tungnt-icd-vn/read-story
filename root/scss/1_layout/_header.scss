@@ -3,8 +3,21 @@
 ------------------------------------------------------------*/
 .c-header {
 	width: 100%;
-	padding: 50px 0;
+	padding: 1rem 0 0 0;
 	text-align: center;
-	background: $color3;
+	text-align: center;
+    z-index: 999;
+	position: relative;
 	transition: 0.3s ease-in-out;
+	&__inner{
+		@include flex-jbetween;
+	}
+	&__list{
+		@include flex-jbetween;
+	}
+	&__item{
+		&:not(:first-child, :last-child) {
+			margin: 0 10px;
+		}
+	}
 }
